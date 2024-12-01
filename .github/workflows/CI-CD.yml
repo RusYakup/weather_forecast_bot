@@ -67,6 +67,6 @@ jobs:
 
       - name: Build and Push Docker image
         run: |
-          docker pull ${{ secrets.DOCKER_USERNAME }}/weather_bot:${{ env.VERSION }}
-          docker tag ${{ secrets.DOCKER_USERNAME }}/weather_bot:${{ env.VERSION }} ${{ secrets.DOCKER_USERNAME }}/weather_bot:latest          
-          docker push ${{ secrets.DOCKER_USERNAME }}/weather_bot:latest
+          docker pull ${{ secrets.DOCKER_USERNAME }}/weather_forecast_bot:${{ env.VERSION }}
+          docker tag ${{ secrets.DOCKER_USERNAME }}/weather_forecast_bot:${{ env.VERSION }} ${{ secrets.DOCKER_USERNAME }}/weather_forecast_bot:latest          
+          docker push ${{ secrets.DOCKER_USERNAME }}/weather_forecast_bot:latest
