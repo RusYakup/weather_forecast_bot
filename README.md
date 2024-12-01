@@ -159,9 +159,8 @@ if __name__ == "__main__":
 4. Validate the bot token using `check_bot_token`.
 5. Validate the API key using `check_api_key`.
 6. Set up the webhook for the Telegram bot using `set_webhook`.
-7. Start the Prometheus server using `start_prometheus_server`.
-8. Create necessary database tables using `asyncio.run(create_table())`.
-9. Start the server using `uvicorn.run`.
+7. Create necessary database tables using `asyncio.run(create_table())`.
+8. Start the server using `uvicorn.run`.
 
 ## Endpoint to tg_webhook
 
