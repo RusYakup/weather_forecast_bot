@@ -46,7 +46,7 @@ jobs:
         run: |
           docker build \
             --push \
-            -t ${{ secrets.DOCKER_USERNAME }}/weather_bot:${{ env.VERSION }} .          
+            -t ${{ secrets.DOCKER_USERNAME }}/weather_forecast_bot:${{ env.VERSION }} .          
 
   release:
     if: github.ref == 'refs/heads/main'
