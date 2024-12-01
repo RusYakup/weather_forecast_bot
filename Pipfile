@@ -17,9 +17,8 @@ prometheus-client = "==0.21.0"
 prometheus-fastapi-instrumentator = "==7.0.0"
 
 [dev-packages]
-pytest-asyncio = "*"
 pytest = "*"
 coverage = "7.6.4"
 
 [requires]
-python_version = "3.12"
+python_version = "3.11"
