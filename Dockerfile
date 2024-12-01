@@ -5,6 +5,6 @@ WORKDIR /app
 COPY . /app
 #COPY ../.env /.env
 RUN pip install --timeout=120 pipenv
-RUN pipenv install --system
+RUN pipenv install
 
 #CMD ["python", "-m", "src.app"]
