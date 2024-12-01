@@ -1,0 +1,45 @@
+api Version: 1
+datasources:
+
+- access: proxy
+  basicAuth: false
+  database: ''
+  editable: true
+  id: 1
+  isDefault: true
+  jsonData:
+    httpMethod: POST
+    prometheusType: Prometheus
+    prometheusVersion: v2.55.1
+    queryTimeout: 180s
+    timeInterval: 60s
+  name: Prometheus
+  orgId: 1
+  readOnly: false
+  type: prometheus
+#  typeLogoUrl: public/app/plugins/datasource/prometheus/img/prometheus_logo.svg
+  typeName: Prometheus
+#  uid: hMI9ChAVk
+  url: http://prometheus:9090
+  user: ''
+
+- access: proxy
+  basicAuth: false
+  database: ''
+  editable: true
+  id: 2
+  isDefault: false
+  jsonData:
+    httpMethod: POST
+    maxLines: 1000
+    queryTimeout: 180s
+    timeInterval: 60s
+  name: Loki
+  orgId: 1
+  readOnly: false
+  type: loki
+#  typeLogoUrl: public/app/plugins/datasource/loki/img/loki_logo.svg
+  typeName: Loki
+#  uid: hMI9ChAVk
+  url: http://loki:3100
+  user: ''
